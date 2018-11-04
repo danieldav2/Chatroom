@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  .main {   //App design
+    left:10%;
+    position:absolute;
+    grid-gap: 5px;
+    display:grid;
+    grid-template-rows: 100px 400px 300px;
+    grid-template-columns: 500px 500px;
+    grid-template-areas:"header header"
+                        "chatbox chatbox"
+                        "floor floor";
+    }
+
+    .header{  //Header design
+      grid-area: header;
+      display: inline-block;
+      padding: 10px;
+      width:100%;
+      text-align: center;
+    }
+    
+    .chat-box{   //Chat.js design
+      border: 4px solid black;
+      grid-area:chatbox;
+      background-color: lightgrey;
+      border-radius: 5px;
+      overflow: scroll;
+    }
+    
+    .input-box{   //MessageCreation.js design
+      justify-self: center;
+      display: inline-block;
+      text-align: center;
+      grid-area:floor;
+    }
+
+    .last {   //LastMessage.js design
+      top: 240px;
+      left: 550px;
+      position:absolute;
+      }
+  
+}
+
+
+
+
+
+
+
